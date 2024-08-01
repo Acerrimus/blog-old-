@@ -1,0 +1,34 @@
+baseURL = "https://ash.fail"
+languageCode = "en"
+title = "Sahil's Blog"
+
+disableHugoGeneratorInject = true
+disableKinds = ["section", "taxonomy", "term"]
+copyright = "All Rights Reserved"
+enableGitInfo = true
+enableRobotsTXT = true
+removePathAccents = true
+uglyURLs = true
+timeZone = "Europe/Prague"
+
+[author]
+  name = "Sahil"
+  email = "csahilsingh.contact@gmail.com"
+  discord = "Acerrimus"
+
+[imaging]
+  quality = 100
+  [imaging.exif]
+    excludeFields = ".*"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = true
+    lineNos = true
+    noClasses = false
+
+[permalinks]
+  blog = "/blog/:year:month:day-:filename"
+
+[security.exec]
+  allow = ["sass"]

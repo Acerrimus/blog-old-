@@ -1,0 +1,339 @@
+@function color($name) {
+    @return var(--color-#{$name});
+}
+
+/* Background */
+.bg {
+    color: color(text);
+    // background-color: color(mantle);
+}
+.chroma {
+    /* PreWrapper */
+    color: color(text);
+    // background-color: color(mantle);
+    width: fit-content;
+
+    /* Other */
+    & .x {
+    }
+    /* Error */
+    & .err {
+        color: color(red);
+    }
+    /* CodeLine */
+    & .cl {
+    }
+    /* LineTableTD */
+    & .lntd {
+        vertical-align: top;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+    /* LineTable */
+    & .lntable {
+        border-spacing: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+    /* LineHighlight - no clue what this is :) */
+    & .hl {
+        background-color: #ffffcc;
+    }
+    /* LineNumbersTable */
+    & .lnt {
+        white-space: pre;
+        user-select: none;
+        margin-right: 0.4em;
+        padding: 0 0.4em 0 0.4em;
+
+        & .lnlinks {
+            padding: 0 0.15em;
+        }
+    }
+    /* LineNumbers */
+    & .ln {
+        white-space: pre;
+        user-select: none;
+        margin-right: 0.4em;
+        padding: 0 0.4em 0 0.4em;
+        color: color(surface2);
+    }
+    /* Line */
+    & .line {
+        display: flex;
+    }
+    /* Keyword */
+    & .k {
+        color: color(maroon);
+    }
+    /* KeywordConstant */
+    & .kc {
+        color: color(peach);
+    }
+    /* KeywordDeclaration */
+    & .kd {
+        color: color(pink);
+    }
+    /* KeywordNamespace */
+    & .kn {
+        color: color(mauve);
+    }
+    /* KeywordPseudo */
+    & .kp {
+        color: color(maroon);
+    }
+    /* KeywordReserved */
+    & .kr {
+        color: color(maroon);
+    }
+    /* KeywordType */
+    & .kt {
+        color: color(blue);
+    }
+    /* Name */
+    & .n {
+    }
+    /* NameAttribute */
+    & .na {
+        color: color(blue);
+    }
+    /* NameBuiltin */
+    & .nb {
+    }
+    /* NameBuiltinPseudo */
+    & .bp {
+    }
+    /* NameClass */
+    & .nc {
+        color: color(blue);
+    }
+    /* NameConstant */
+    & .no {
+        color: color(maroon);
+    }
+    /* NameDecorator */
+    & .nd {
+        color: color(blue);
+    }
+    /* NameEntity */
+    & .ni {
+    }
+    /* NameException */
+    & .ne {
+        color: color(blue);
+    }
+    /* NameFunction */
+    & .nf {
+    }
+    /* NameFunctionMagic */
+    & .fm {
+    }
+    /* NameLabel */
+    & .nl {
+    }
+    /* NameNamespace */
+    & .nn {
+    }
+    /* NameOther */
+    & .nx {
+    }
+    /* NameProperty */
+    & .py {
+    }
+    /* NameTag */
+    & .nt {
+        color: color(pink);
+    }
+    /* NameVariable */
+    & .nv {
+    }
+    /* NameVariableClass */
+    & .vc {
+    }
+    /* NameVariableGlobal */
+    & .vg {
+    }
+    /* NameVariableInstance */
+    & .vi {
+    }
+    /* NameVariableMagic */
+    & .vm {
+    }
+    /* Literal */
+    & .l {
+        color: color(peach);
+    }
+    /* LiteralDate */
+    & .ld {
+        color: color(green);
+    }
+    /* LiteralString */
+    & .s {
+        color: color(green);
+    }
+    /* LiteralStringAffix */
+    & .sa {
+        color: color(green);
+    }
+    /* LiteralStringBacktick */
+    & .sb {
+        color: color(green);
+    }
+    /* LiteralStringChar */
+    & .sc {
+        color: color(green);
+    }
+    /* LiteralStringDelimiter */
+    & .dl {
+        color: color(green);
+    }
+    /* LiteralStringDoc */
+    & .sd {
+        color: color(green);
+    }
+    /* LiteralStringDouble */
+    & .s2 {
+        color: color(green);
+    }
+    /* LiteralStringEscape */
+    & .se {
+        color: color(peach);
+    }
+    /* LiteralStringHeredoc */
+    & .sh {
+        color: color(green);
+    }
+    /* LiteralStringInterpol */
+    & .si {
+        color: color(green);
+    }
+    /* LiteralStringOther */
+    & .sx {
+        color: color(green);
+    }
+    /* LiteralStringRegex */
+    & .sr {
+        color: color(green);
+    }
+    /* LiteralStringSingle */
+    & .s1 {
+        color: color(green);
+    }
+    /* LiteralStringSymbol */
+    & .ss {
+        color: color(green);
+    }
+    /* LiteralNumber */
+    & .m {
+        color: color(peach);
+    }
+    /* LiteralNumberBin */
+    & .mb {
+        color: color(peach);
+    }
+    /* LiteralNumberFloat */
+    & .mf {
+        color: color(peach);
+    }
+    /* LiteralNumberHex */
+    & .mh {
+        color: color(peach);
+    }
+    /* LiteralNumberInteger */
+    & .mi {
+        color: color(peach);
+    }
+    /* LiteralNumberIntegerLong */
+    & .il {
+        color: color(peach);
+    }
+    /* LiteralNumberOct */
+    & .mo {
+        color: color(peach);
+    }
+    /* Operator */
+    & .o {
+    }
+    /* OperatorWord */
+    & .ow {
+        color: color(pink);
+    }
+    /* Punctuation */
+    & .p {
+        color: color(maroon);
+    }
+    /* Comment */
+    & .c {
+        color: color(surface2);
+    }
+    /* CommentHashbang */
+    & .ch {
+        color: color(surface2);
+    }
+    /* CommentMultiline */
+    & .cm {
+        color: color(surface2);
+    }
+    /* CommentSingle */
+    & .c1 {
+        color: color(surface2);
+    }
+    /* CommentSpecial */
+    & .cs {
+        color: color(surface2);
+    }
+    /* CommentPreproc */
+    & .cp {
+        color: color(surface2);
+    }
+    /* CommentPreprocFile */
+    & .cpf {
+        color: color(surface2);
+    }
+    /* Generic */
+    & .g {
+    }
+    /* GenericDeleted */
+    & .gd {
+        color: color(pink);
+    }
+    /* GenericEmph */
+    & .ge {
+        font-style: italic;
+    }
+    /* GenericError */
+    & .gr {
+    }
+    /* GenericHeading */
+    & .gh {
+    }
+    /* GenericInserted */
+    & .gi {
+        color: color(blue);
+    }
+    /* GenericOutput */
+    & .go {
+    }
+    /* GenericPrompt */
+    & .gp {
+    }
+    /* GenericStrong */
+    & .gs {
+        font-weight: bold;
+    }
+    /* GenericSubheading */
+    & .gu {
+        color: color(surface2);
+    }
+    /* GenericTraceback */
+    & .gt {
+    }
+    /* GenericUnderline */
+    & .gl {
+    }
+    /* TextWhitespace */
+    & .w {
+    }
+}
