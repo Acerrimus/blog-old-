@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    & > h1 {
+        font-size: xx-large;
+    }
+}
+
+nav > a {
+    margin-right: min(2.5ch, 4vw);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+ul {
+    max-width: 80ch;
+    margin-top: 1.75rem;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    margin: 0.75rem 0;
+    column-gap: 1ch;
+    display: flex;
+    flex-flow: column wrap;
+
+    & > a {
+        text-decoration: underline;
+        text-decoration-color: var(--color-surface2);
+        margin-right: auto;
+    }
+
+    & > p {
+        margin: 0.75rem 0;
+    }
+}
